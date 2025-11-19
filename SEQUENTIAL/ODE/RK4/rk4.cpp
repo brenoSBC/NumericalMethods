@@ -15,12 +15,6 @@
 #include <iomanip>
 #include <cmath>
 
-/*
-* --------------------------------------------------------------------
-* Global configuration
-* --------------------------------------------------------------------
-*/
-
 #define H 0.1
 #define N 1000
 #define Y0 2
@@ -32,7 +26,7 @@ inline double f(double x, double y) {
 double rk4() {
 
     double x  = 0.0;
-    double y  = 2.0;
+    double y  = Y0;
     double k1 = 0.0, k2 = 0.0, k3 = 0.0, k4 = 0.0;
 
     for(int i = 0; i < N; i++) {
